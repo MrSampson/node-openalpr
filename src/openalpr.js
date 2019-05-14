@@ -43,7 +43,7 @@ function OpenALPR () {
 		
 		var cpu_count = os.cpus ().length;
 		
-		initialized = nativeLPR.Start (config || "", runtime || "", count || cpu_count, region || "gb",  function (reason) {
+		initialized = nativeLPR.Start (config || "", runtime || "", count || cpu_count, region || "us", function (reason) {
 			console.log ("OpenALPR Stopped " + reason);
 		});
 		
